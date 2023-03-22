@@ -23,11 +23,19 @@ public class ProyectoSpringApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Customer customer = new Customer("Pepe",
-				"Lopez","Perez",
-				LocalDate.of(1982, 5,9), LocalDateTime.now());
+		Customer customer = new Customer("Pep1",
+				"Lopez0","Perez0","pep1@gmail.com",
+				LocalDate.of(1980, 1,2), LocalDateTime.now());
+		Customer customer2 = new Customer("Pep2",
+				"Lopez1","Perez2","pep2@gmail.com",
+				LocalDate.of(1981, 2,5), LocalDateTime.now());
+		Customer customer3 = new Customer("Pep3",
+				"Lopez3","Perez3","pep3@gmail.com",
+				LocalDate.of(1983, 3,6), LocalDateTime.now());
 
 		customerRepository.save(customer);
+		customerRepository.save(customer2);
+		customerRepository.save(customer3);
 
 	}
 }

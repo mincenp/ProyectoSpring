@@ -25,14 +25,16 @@ public class Customer {
     private String name;
     private String secondName;
     private String thirdName;
+    private String email;
     private LocalDate birthday;
     private LocalDateTime registrationDateTime;
 
 
-    public Customer(String name, String secondName, String thirdName, LocalDate birthday, LocalDateTime registrationDateTime) {
-        this.name= name;
+    public Customer(String name, String secondName, String thirdName, String email, LocalDate birthday, LocalDateTime registrationDateTime) {
+        this.name = name;
         this.secondName = secondName;
         this.thirdName = thirdName;
+        this.email = email;
         this.birthday = birthday;
         this.registrationDateTime = registrationDateTime;
     }
